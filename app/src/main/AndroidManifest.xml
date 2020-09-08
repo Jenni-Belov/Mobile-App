@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jenny.datingfuwa">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="com.example.jenny.datingfuwa.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.jenny.datingfuwa.MainActivity" />
+
+        <activity
+            android:name="com.example.jenny.datingfuwa.EinlogActivity" />
+
+        <activity
+            android:name="com.example.jenny.datingfuwa.RegistActivity" />
+
+        <activity
+            android:name="com.example.jenny.datingfuwa.ProfilActivity" />
+
+        <meta-data
+            android:name="DbHelper"
+            android:value="datingDB2.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="TABLE_NAME"
+            android:value="true" />
+
+    </application>
+
+</manifest>
